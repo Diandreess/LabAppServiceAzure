@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Alumnos</title>
+</head>
+<body>
+    <h1>Lista de Alumnos</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID Alumno</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Carne</th>
+                <th>Curso</th>
+                <th>Nota</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Diego Andres</td>
+                    <td>Bautista Cruz</td>
+                    <td>1181821</td>
+                    <td>Ciencia de Datos</td>
+                    <td>100</td>
+                    <td>
+                        <!-- Botón de editar -->
+                        <button type="button" onclick="alert('Has logrado editar al alumno')">Editar</button>
+                        
+                        <!-- Botón de eliminar -->
+                        <form action="" method="POST" style="display:inline;" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este alumno?');">
+                            <input type="hidden" name="eliminar_id">
+                            <button type="submit">Eliminar</button>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pablo</td>
+                    <td>Pisquiy</td>
+                    <td>2556788</td>
+                    <td>Compiladores</td>
+                    <td>100</td>
+                    <td>
+                        <!-- Botón de editar -->
+                        <button type="button" onclick="alert('Has logrado editar al alumno')">Editar</button>
+                        
+                        <!-- Botón de eliminar -->
+                        <form action="" method="POST" style="display:inline;" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este alumno?');">
+                            <input type="hidden" name="eliminar_id">
+                            <button type="submit">Eliminar</button>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Fernanda</td>
+                    <td>Diaz</td>
+                    <td>5548785</td>
+                    <td>Redes y Telecomunicaciones</td>
+                    <td>100</td>
+                    <td>
+                        <!-- Botón de editar -->
+                        <button type="button" onclick="alert('Has logrado editar al alumno')">Editar</button>
+                        
+                        <!-- Botón de eliminar -->
+                        <form action="" method="POST" style="display:inline;" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este alumno?');">
+                            <input type="hidden" name="eliminar_id">
+                            <button type="submit">Eliminar</button>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Maximus</td>
+                    <td>Alexander</td>
+                    <td>56572155</td>
+                    <td>Virtualización</td>
+                    <td>100</td>
+                    <td>
+                        <!-- Botón de editar -->
+                        <button type="button" onclick="alert('Has logrado editar al alumno')">Editar</button>
+                        
+                        <!-- Botón de eliminar -->
+                        <form action="" method="POST" style="display:inline;" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este alumno?');">
+                            <input type="hidden" name="eliminar_id">
+                            <button type="submit">Eliminar</button>
+                        </form>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+
+    <button type="button" onclick="window.location.href='index.html';">Agregar Nuevo Alumno</button>
+</body>
+</html>
